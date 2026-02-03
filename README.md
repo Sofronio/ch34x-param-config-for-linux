@@ -79,7 +79,7 @@ make
 # Successful compilation creates ch343.ko
 ~~~
 When you're using Orangepi, big change that your linux header is not installed.
-Chech here first: #how-to-install-kernel-header-files
+Chech here first: [how-to-install-kernel-header-files](#how-to-install-kernel-header-files)
 
 ### Step 4: Load the Driver
 ~~~
