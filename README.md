@@ -253,6 +253,15 @@ Manufacturer_String=Decent Espresso
 ~~~
 sudo ./CH34xSerCfg /dev/ttyCH343USB0 CONFIG.INI
 ~~~
+if it shows
+~~~
+./CH34xSerCfg: error while loading shared libraries: libch343.so: cannot open shared object file: No such file or directory
+~~~
+then use this instead
+~~~
+sudo LD_LIBRARY_PATH=./ ./CH34xSerCfg /dev/ttyCH343USB1 CONFIG.INI
+~~~
+
 
 #### Interactive Commands
 ~~~
