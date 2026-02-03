@@ -202,6 +202,30 @@ ldconfig -p | grep ch34
 cd ch343ser_linux/param_config
 gcc ch34x_demo_param_config.c -lch34xcfg -lch343 -lch9344 -o CH34xSerCfg
 ~~~
+When you're using orangepi, it might not have the header installed.
+You can try this(Quote from Orangepi Zero2w Manual):
+
+#### How to install kernel header files
+Debian11 system with Linux6.1 kernel will report GCC error when compiling
+kernel module. So if you want to compile the kernel module, please use Debian12 or
+Ubuntu22.04.
+1) The Linux image released by OPi comes with the deb package of the kernel header
+file by default, and the storage location is /opt/
+~~~
+orangepi@orangepi:~$ ls /opt/linux-headers*
+/opt/linux-headers-xxx-sun50iw9_x.x.x_arm64.deb
+~~~
+3) Use the following command to install the deb package of the kernel header file
+~~~
+orangepi@orangepi:~$ sudo dpkg-i /opt/linux-headers*.deb
+rangePiUserManual CopyrightreservedbyShenzhenXunlongSoftwareCo.,Ltd
+~~~
+3)After installation, you can see the folder where the kernel header file is located under
+/usr/src.
+~~~
+orangepi@orangepi:~$ls/usr/src
+linux-headers-x.x.x
+~~~
 
 ### Configuration File Format
 Create a configuration file (e.g., `my_config.ini`):
