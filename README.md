@@ -225,7 +225,7 @@ orangepi@orangepi:~$ sudo dpkg -i /opt/linux-headers*.deb
 3) After installation, you can see the folder where the kernel header file is located under
 /usr/src.
 ~~~
-orangepi@orangepi:~$ls /usr/src
+orangepi@orangepi:~$ ls /usr/src
 linux-headers-x.x.x
 ~~~
 
