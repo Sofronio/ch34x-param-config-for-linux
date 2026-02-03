@@ -181,6 +181,8 @@ The CH34xSerCfg utility configures USB parameters for WCH USB-to-serial chips, i
 ### Installation Requirements
 
 #### Library Installation
+[https://github.com/WCHSoftGroup/ch9344ser_linux/tree/main/lib](https://github.com/WCHSoftGroup/ch9344ser_linux/tree/main/lib)
+[https://github.com/WCHSoftGroup/ch343ser_linux/tree/main/lib](https://github.com/WCHSoftGroup/ch343ser_linux/tree/main/lib)
 ~~~
 # Copy libraries to system path
 sudo cp /path/to/libch34xcfg.so /usr/lib/aarch64-linux-gnu/
