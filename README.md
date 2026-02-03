@@ -67,6 +67,7 @@ lsusb | grep 1a86
 # Check for existing serial devices
 ls /dev/ttyCH343USB* /dev/ttyACM* 2>/dev/null
 ~~~
+If the linked device is shown as ttyACM*, you should first checkout the CDC-ACM Driver Conflict Resolution part below.
 
 ### Step 3: Compile the Driver
 ~~~
