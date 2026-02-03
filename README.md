@@ -208,7 +208,7 @@ gcc ch34x_demo_param_config.c -lch34xcfg -lch343 -lch9344 -o CH34xSerCfg
 When you're using orangepi, it might not have the header installed.
 You can try this(Quote from Orangepi Zero2w Manual):
 
-#### How to install kernel header files
+### How to install kernel header files
 Debian11 system with Linux6.1 kernel will report GCC error when compiling
 kernel module. So if you want to compile the kernel module, please use Debian12 or
 Ubuntu22.04.
@@ -220,13 +220,12 @@ orangepi@orangepi:~$ ls /opt/linux-headers*
 ~~~
 3) Use the following command to install the deb package of the kernel header file
 ~~~
-orangepi@orangepi:~$ sudo dpkg-i /opt/linux-headers*.deb
-rangePiUserManual CopyrightreservedbyShenzhenXunlongSoftwareCo.,Ltd
+orangepi@orangepi:~$ sudo dpkg -i /opt/linux-headers*.deb
 ~~~
-3)After installation, you can see the folder where the kernel header file is located under
+3) After installation, you can see the folder where the kernel header file is located under
 /usr/src.
 ~~~
-orangepi@orangepi:~$ls/usr/src
+orangepi@orangepi:~$ls /usr/src
 linux-headers-x.x.x
 ~~~
 
