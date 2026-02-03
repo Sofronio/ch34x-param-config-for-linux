@@ -78,6 +78,8 @@ make clean
 make
 # Successful compilation creates ch343.ko
 ~~~
+When you're using Orangepi, big change that your linux header is not installed.
+Chech here first: https://github.com/Sofronio/ch34x-param-config-for-linux/blob/main/README.md#how-to-install-kernel-header-files
 
 ### Step 4: Load the Driver
 ~~~
